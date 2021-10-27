@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    int i;
+    int array[5] = { 14, 15, 17, 45, 81};
+
+    for ( i = 0; i < 5; i++ ){
+        printf("%d ", array[i]);
+    }
+}
