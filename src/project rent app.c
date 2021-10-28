@@ -52,11 +52,16 @@ int main(){
 			continue;
 			
 		case 2:
-			res = charge(choice, hour);
-			printf("your car was %c\ntime: %i Hours\n", choice, hour);
-    		printf("total price: %.2f RM\n", res);
+			if (choice == 'S'|| choice == 'L'|| choice == 'M')
+			{
+				res = charge(choice, hour);
+				printf("your car was %c\ntime: %i Hours\n", choice, hour);
+    			printf("total price: %.2f RM\n", res);
+			} else{
+				printf("choice was not inputted");
+				continue;
+			}
 			continue;
-
 		case 3:
     		for(i = 0; i < 1; i++) {
         		for(j = 0; j < num_count; j++) {
@@ -69,7 +74,7 @@ int main(){
        			}
 				printf("\nthis is your payment code, please show it to the scooter rental officer\n");
     		}
-			break;
+			continue;
 		case 4:
 			printf("thank you for using our services");
 			break;
@@ -77,5 +82,6 @@ int main(){
 			printf("input error");
 			break;
 		}
+		break;
 	}
 }
