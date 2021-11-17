@@ -1,12 +1,21 @@
 #include<stdio.h>
 
+void panggil(){
+    printf("kepanggil");
+}
+
 int main() {
-    printf("Hello world!");
-    printf("hallo semuanya");
-    
-    printf("tes1");
-    printf("tes 2");
-    int pass;
-    scanf("masukkan pass %s", &pass);
-    printf("pass anda %s", pass);
+    char terima;
+    char terima1;
+    scanf("%c", terima);
+    scanf("%c", terima1);
+
+    if (terima == 'y'){
+        panggil;
+    }
+    printf("lewat");
+
+    if (terima1 == 'n'){
+        panggil;
+    }
 }
